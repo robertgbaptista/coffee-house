@@ -4,7 +4,7 @@
 }
 
 
-/* NavBar Component */
+/* NavBar */
 #navbar {
   position: absolute;
   top: 0;
@@ -28,6 +28,7 @@
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 #navbar ul li img {
@@ -49,6 +50,12 @@
 #navbar a:hover::after {
   width: 100%;
   background-color: #fff;
+}
+
+@media (max-width: 640px) {
+  #navbar ul {
+    gap: 50px;
+  }
 }
 
 
@@ -73,4 +80,68 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 120px;
+}
+
+#announcement .content {
+  position: relative;
+  display: flex;
+  width: 80%;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px
+}
+
+#announcement img {
+  max-width: 362px;
+  max-height: 398px;
+}
+
+.a-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 640px;
+  height: 398px;
+}
+
+@media (max-width: 1024px) { 
+  #announcement img {
+    transform: scale(.8);
+  }
+
+  #announcement .message h1 {
+    font-size: 3em;
+  }
+
+  #announcement .message h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  #announcement .content {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  #announcement .message h1 {
+    font-size: 2.75em;
+  }
+}
+
+@media (max-width: 640px) {
+  #announcement img {
+    transform: scale(.6);
+  }
+
+  #announcement .message h1 {
+    font-size: 2.5em;
+  }
+
 }

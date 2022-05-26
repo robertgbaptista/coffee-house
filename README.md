@@ -1,6 +1,6 @@
 # Coffee Tree Landing Page
 
-### Built with:
+### Built with
 - HTML
 - CSS
 - JavaScript
