@@ -1,38 +1,76 @@
 .App {
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* NavBar Component */
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navbar ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 0px 100px;
+  gap: 120px;
+  list-style: none;
+  height: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar ul li img {
+  height: 60px;
+  width: 60px;
+}
+
+#navbar a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  bottom: 0;
+  width: 0;
+  left: 0;
+  background: #fff;
+  transition: all .3s ease-in-out;
+}
+
+#navbar a:hover::after {
+  width: 100%;
+  background-color: #fff;
+}
+
+
+/* Announcement */
+.bg-image {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://user-images.githubusercontent.com/65358991/170400125-13595877-a8de-4b60-8dd3-ed5c1af6986b.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#announcement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(57, 63, 128, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

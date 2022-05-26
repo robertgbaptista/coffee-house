@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --green: #48813c;
+    --brown: #803c20;
+    --purple: #393f80;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #fff;
+}
