@@ -1,15 +1,13 @@
 # Coffee Tree Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Built with
+### Built with:
 - HTML
 - CSS
 - JavaScript
 - TypeScript
 - React
 
-## Dependencies
+### Dependencies
 - TypeScript
 
 ## Author
