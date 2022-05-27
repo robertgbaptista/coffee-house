@@ -7,7 +7,9 @@ export default function Announcement() {
         <div className="bg-image">
             <section id="announcement">
                 <div className="content">
-                    <img src="https://user-images.githubusercontent.com/65358991/170405371-0e58feb1-7ae2-449f-861f-cbdc39c04f0b.png" alt="Coffee House Logo" />
+                    <div className="logo">
+                        <img src="https://user-images.githubusercontent.com/65358991/170405371-0e58feb1-7ae2-449f-861f-cbdc39c04f0b.png" alt="Coffee House Logo" />
+                    </div>
                     <div className="message">
                         <h1>Join us for our Grand Opening event!</h1>
                         <h2>

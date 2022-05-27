@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Announcement from './components/announcement';
+import CallToAction from './components/callToAction';
 import NavBar from './components/navbar';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Announcement />
+      <CallToAction />
     </div>
   );
 }
