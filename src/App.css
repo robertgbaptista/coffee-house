@@ -320,6 +320,7 @@ form .submit-btn {
   border: none;
   color: #fff;
   background-color: var(--purple);
+  border-radius: 10px;
 }
 
 form .submit-btn:hover {
