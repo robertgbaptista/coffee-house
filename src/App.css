@@ -197,6 +197,7 @@
   height: auto;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
 }
 
 #callToAction .container {
@@ -208,7 +209,6 @@
   width: 100%;
   height: auto;
   top: 0;
-  margin-top: 150px;
 }
 
 #callToAction .img-wrapper {
@@ -683,5 +683,11 @@ form .submit-btn:hover {
 
   #contact .container .contact-info a {
     font-size: 1.8em;
+  }
+}
+
+@media (max-height: 420px) {
+  #contact .container {
+    padding: 10px 40px;
   }
 }
