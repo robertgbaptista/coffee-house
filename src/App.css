@@ -117,7 +117,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: rgba(57, 63, 128, 0.8);
   color: #fff;
@@ -382,14 +382,10 @@ form .submit-btn:hover {
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px), (max-height: 420px) {
   #callToAction .promo-message h2,
   #CallToAction .promo-message p {
     padding: 10px 0;
-  }
-
-  #callToAction .name-input {
-
   }
 
   #first-name {
@@ -441,7 +437,7 @@ form .submit-btn:hover {
 #offerings .offering-img {
   width: 490px;
   height: auto;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 #offerings .menu,
@@ -450,7 +446,7 @@ form .submit-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
 .menu .menu-content,
@@ -500,8 +496,197 @@ form .submit-btn:hover {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px), (max-height: 390px) {
   #offerings .container {
     flex-wrap: wrap;
+  }
+}
+
+
+/* Social Component */
+#social {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+#social .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 1052px;
+  height: auto;
+}
+
+#social .social-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  color: var(--green);
+  width: 100%;
+  max-width: 1032px;
+  margin-bottom: 20px;
+}
+
+#social .social-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#social .social-content .review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 20px;
+  isolation: isolate;
+}
+
+#social .social-content .review img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  margin-right: 20px;
+}
+
+#social .social-content .review p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  #social .review {
+    flex-wrap: wrap;
+  }
+
+  #social .review img {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Contact Component */
+#contact {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 150px;
+  background-image: url(https://user-images.githubusercontent.com/65358991/170889533-fea84a69-983c-4d29-8adb-20defd395fea.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+#contact .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--green);
+  right: 8%;
+}
+
+#contact .contact-header {
+  font-weight: 700;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#contact .container .contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+#contact .container .contact-info i {
+  font-size: 2.25em;
+  margin-right: 20px;
+}
+
+#contact .container .contact-info a {
+  font-size: 36px;
+  text-decoration: none;
+  text-align: left;
+  color: var(--green);
+}
+
+#contact .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact .social-media i {
+  font-size: 2.25em;
+  margin-right: 40px;
+  color: var(--green);
+}
+
+#contact .social-media a {
+  text-decoration: none;
+}
+
+#contact .container .contact-info a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  bottom: 0;
+  width: 0;
+  left: 0;
+  background: var(--green);
+  transition: all .6s ease-in-out;
+}
+
+#contact .container .contact-info a:hover::after {
+  width: 100%;
+  background-color: var(--green);
+}
+
+@media (max-width: 640px) {
+  #contact {
+    width: 100%;
+  }
+
+  #contact .container {
+    right: 0;
+    width: 100%;
+  }
+
+  #contact .contact-info i {
+    display: none;
+  }
+
+  #contact .container .contact-info a {
+    font-size: 1.8em;
   }
 }
