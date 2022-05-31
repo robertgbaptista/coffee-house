@@ -104,22 +104,15 @@
 
 
 /* Announcement */
-.bg-image {
+#announcement {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-image: url("https://user-images.githubusercontent.com/65358991/170400125-13595877-a8de-4b60-8dd3-ed5c1af6986b.png");
+  background: linear-gradient(0deg, rgba(57, 63, 128, 0.8), rgba(57, 63, 128, 0.8)), 
+    url("https://user-images.githubusercontent.com/65358991/170400125-13595877-a8de-4b60-8dd3-ed5c1af6986b.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-
-#announcement {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(57, 63, 128, 0.8);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -595,6 +588,7 @@ form .submit-btn:hover {
   background-image: url(https://user-images.githubusercontent.com/65358991/170889533-fea84a69-983c-4d29-8adb-20defd395fea.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 100vw;
   height: 100vh;
 }
