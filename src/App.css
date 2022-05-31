@@ -343,7 +343,7 @@ form .submit-btn:hover {
   form .name-input,
   form .email-input,
   form .submit-btn {
-    transform: scale(.85);
+    transform: scale(.80);
     margin-bottom: 10px;
   }
 
